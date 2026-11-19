@@ -39,8 +39,7 @@ Short and plain. Any of these shapes works:
 - a «Что / Для кого» clause: «Что теряется из-за неполных требований», «Что будет при росте в 10
   и в 100 раз», «Для кого курс»;
 - a plain sentence when the slide makes one claim: «На систем дизайне нужно понять проблему и
-  решать именно её»;
-- «Опыт:» in front of a story slide: «Опыт: Отдельная реплика для аналитиков».
+  решать именно её».
 
 Never a compressed "generalized fact" that packs the whole argument into one noun phrase:
 
@@ -81,9 +80,6 @@ No tool enumerations or clarifying tails: «...в Hadoop, Greenplum и ClickHous
 
 ## Voice on slides
 
-- The speaker's first person and practitioner slang belong on slides too: «Затащил офферы:»,
-  «Рабочие байки», «СисДиз».
-- A single «:)» is allowed for a light remark in a bullet or table cell: «Не гарантируется :)».
 - Polls are spoken questions: «На чём у вас сейчас основное аналитическое хранилище?», «Ответьте
   в чате».
 

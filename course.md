@@ -1,7 +1,7 @@
 # Course materials
 
-For text a student reads and carries out: lessons, labs, exercises, homework, hints. Reader by
-default: intermediate Data Engineer who already writes SQL. Ask if the audience differs.
+For text a student reads and carries out: lessons, labs, exercises, homework, hints. Take the
+reader's level from `author/course.md` or the project; ask if nothing settles it.
 
 ## The student is the actor
 
@@ -47,16 +47,12 @@ Imperative for UI actions: «Откройте боковую панель». Spo
     задача уже выполнена»
 - **Realistic mini-scenarios.** Breakage is a plausible workplace event: «считайте, что его
   случайно выполнил коллега, перепутав знак в условии».
-- **Anchor to what a RU DE already knows**: Greenplum, Kafka, HDFS, layer analogies («Аналог
-  DDS»), production contrast with «В проде…» / «В реальных компаниях…».
 - **The student-facing consequence**, not the internal mechanism, for rules that exist for the
   course's own plumbing: «только на такие имена вам выданы права» -> «только с таким названием
   тесты самопроверки сработают».
 - **Expected result** before or right after each verification step, in concrete numbers: «Должно
   получиться чуть больше 10 миллионов».
 - **Odd-looking code** gets one sentence of explanation right next to it.
-- Never explain SQL syntax or basic engine concepts; always explain distributed behaviour,
-  defaults and version caveats.
 - Interchangeable terms are declared once at first use, then used freely.
 - No wall-clock figures as facts («загрузка идёт около 45 секунд»): say what to watch, or give
   the order of magnitude.
@@ -70,8 +66,6 @@ Imperative for UI actions: «Откройте боковую панель». Spo
 - Headings say what and where; an English term the student will meet goes in brackets: «Срочное
   исправление в PROD (hotfix)».
 - Cross-references cite the section title in «ёлочках» with the number the student can see.
-- Product naming: «лаба» (informal) or «лабораторный стенд» (formal), never «песочница»,
-  «sandbox», «demo», «лаборатория».
 - Diagrams carry no prose and no note boxes; the text around them explains.
 
 ## Self-check questions and handouts
@@ -80,5 +74,4 @@ Imperative for UI actions: «Откройте боковую панель». Spo
   covered.
 - A tool class gets several examples, so one tool does not read as the class: OLTP is not
   "always Postgres".
-- No recommendations that "happen" to lead to the author's course.
 - Sources go inline where they support a point, not as a "дополнительная литература" list.

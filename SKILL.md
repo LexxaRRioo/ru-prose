@@ -1,29 +1,33 @@
 ---
 name: ru-prose
 description: |
-  The user's rules for Russian prose. Use whenever writing, editing or reviewing Russian text
-  for the user or their clients: slides and speaker notes, course and lab materials, landing
-  and sales copy, posts, emails, docs. Covers voice, word order, sentence length, linking,
-  banned vocabulary, AI-slop patterns and punctuation, with до/после examples taken from the
-  user's own edits. Load the medium file that matches the task: slides.md, course.md, posts.md.
+  Rules for Russian prose. Use whenever writing, editing or reviewing Russian text: slides and
+  speaker notes, course and lab materials, landing and sales copy, posts, emails, docs. Covers
+  voice, word order, sentence length, linking, banned vocabulary, AI-slop patterns and
+  punctuation, with до/после examples taken from the author's own edits. Load the medium file
+  that matches the task (slides.md, course.md, posts.md) and the author's conventions in author/.
 ---
 
 # Russian prose rules
 
-Every rule comes from the user's own manual edits. When in doubt, match those edits over any
+Every rule comes from the author's own manual edits. When in doubt, match those edits over any
 general style advice, including the humanizer skill.
 
 Tone: polite, direct, spoken-Russian phrasing, no lecture voice («не как в учебнике»).
 
-Load by medium, in addition to this file. Where a medium file contradicts this file, the medium
-file wins.
+Load by medium, in addition to this file. Then load the author's conventions: always
+`author/general.md`, plus the `author/` file for the medium if it exists. On a conflict the
+author's file wins over the medium file, and the medium file wins over this one.
 
-| Text | File |
-|---|---|
-| Slides, speaker notes, talk outlines | `slides.md` |
-| Course materials, labs, exercises, anything a student carries out | `course.md` |
-| Telegram and other social posts in the user's own channel | `posts.md` |
-| Emails, landing and sales copy, docs | this file only |
+| Text | Medium file | Author's file |
+|---|---|---|
+| Slides, speaker notes, talk outlines | `slides.md` | `author/slides.md` |
+| Course materials, labs, exercises, anything a student carries out | `course.md` | `author/course.md` |
+| Telegram and other social posts in the author's own channel | `posts.md` | `author/posts.md` |
+| Emails, landing and sales copy, docs | this file only | - |
+
+This file and the medium files hold rules that work for any Russian text. `author/` holds one
+author's choices: address forms per project, typography, signature formatting, words they dislike.
 
 ## Drafting
 
@@ -38,18 +42,12 @@ file wins.
   would it read the same in a from-scratch draft? If not, rewrite it as a plain statement.
   Corrections belong in the chat reply.
 - Apply these rules to every derived file too: slide HTML, bonus PDFs, scripts built from a plan.
-- Before editing an existing file, check whether it sits in a git repo. If it does and has
-  uncommitted changes or is untracked, commit that file alone first («<file>: draft before
-  edit»), so the user sees the edit as a clean diff. Commit only that file, never other changes
-  in the repo.
 
 ## Voice
 
 - The address form is set per project, and one text never mixes forms. Take it from the
-  project's framing doc or its existing texts. The DE system design course uses «ты» everywhere:
-  video scripts, slides, handouts, program. Vacancies and channel-facing texts use «ты». Labs and
-  older course materials use «вы». If nothing settles it, ask. Never use the impersonal
-  «следует выполнить».
+  project's framing doc, its existing texts or `author/general.md`. If nothing settles it, ask.
+  Never use the impersonal «следует выполнить».
 - First-person plural present for joint actions: «Смотрим, какие базы данных видны», «Разберём
   это дальше». First-person singular only for the author's recommendations and opinions,
   sparingly: «рекомендую нажать Ctrl+B».
@@ -115,7 +113,7 @@ value: «в `trace` лежит причина».
 
 ## Sentence length
 
-More than three marks out of comma, « - » and colon in one sentence means it holds two or three
+More than three marks out of comma, dash and colon in one sentence means it holds two or three
 sentences' worth of clauses. Split it. A code span and a «...» title count as one name; a plain
 enumeration («офсет, партиция, ключ, время и значение») is one list. Those are the only exemptions.
 
@@ -162,15 +160,11 @@ The author edits for substance as often as for style. These rules cover what a t
 - Unpack any compressed claim. If a sentence needs the author to ask «почему? объясни мысль», it
   is not done. A reference the reader cannot decode (a case name, a routing trick) is explained or
   cut.
-- The author's own experience over other companies' cases and numbers. No namedropping to back a
-  point («Авито», «Магнит»): state the fact, or ask the author for their story.
 - Name what the reader gains, not an abstract verdict:
   - До: «Название инструмента без этой цепочки ответом не считается» -> После: «Расширить
     кругозор и перестать предлагать инструменты по привычке»
 - Neutral words for the reader's current setup: «привычный стек», never «старый стек».
 - A conclusion never undercuts the text's own thesis («можно оставить всё как было»).
-- No self-promotion the author did not ask for: no plugs for their labs or products, no hints
-  that steer toward the author's course.
 - Honest numbers. Hours, prices and workload are realistic, never flattering to the offer.
 - A calculation shows where every number comes from, in plain notation: «2 млн», not «2e6».
 - Concrete DE work instead of generic verbs: «грузить, мониторить и чинить» -> «описать в коде,
@@ -215,23 +209,11 @@ Replace on sight, in any position (headings, body, captions, alt text):
 
 | Banned | Use instead |
 |---|---|
-| «данные легли», «данные лягут», «результат ляжет» | «сохранились», «попали на шард», «оказались на», «находятся» |
-| «завести таблицу», «заведём таблицу» | «создать таблицу», «создадим таблицу» |
 | «отказ» as a noun for an error | «ошибка». The verb stays legal: «ClickHouse откажется выполнять запрос» |
 | «коннекция» | «подключение» |
-| «прибитый к ноде» | «прикреплённый к ноде» |
 | «представляет собой» | plain verb or dash construction: «Лабораторный стенд - небольшой кусок реального стека» |
 | «молча», «молчит», «тихо», «тихий» for "without an explicit error" | name what is absent: «без явной ошибки», «`trace` пустой», «в логе ни одного сообщения», «ответ неполный, ошибки нет» |
 | «плата», «цена», «компромисс» for a trade-off | state both sides plainly: «`double` округляет до пятнадцати значащих цифр», «промежуточные версии строки не сохраняются» |
-| «цена», «чем платите» for cost in general, including table columns | «затраты» |
-| «старый стек» about the reader's setup | «привычный стек» |
-| «переиграть данные» | «повторно обработать» |
-| «смежники» | «смежные команды» |
-| «если не так» as a label | «альтернатива» |
-| «Схемка» and other diminutives for artefacts | «Карточка», «схема» |
-| «DE» in running text on slides | «дата инженер» |
-| «мимо» about writing past a table or interface | «в обход» |
-| «переезжает», «переехал» about data or state | name the movement: «строки попадают на другой шард» |
 | «в данной работе», «на данный момент» | «в этой работе», «здесь», «сейчас» |
 
 ## AI-slop patterns
@@ -293,8 +275,8 @@ without them. «прямо» stays in «прямо из S3», «прямо се�
 - До: «вернул правдоподобный результат, просто неполный» -> После: «вернул правдоподобный
   результат, но неполный»
 
-**Smileys.** No «:)». The sentence carries the tone or it has none. Exceptions: slides.md and
-posts.md.
+**Smileys.** No «:)». The sentence carries the tone or it has none. The author's files may allow
+exceptions.
 
 **Rule of three, anaphora.** Two items or a plain sentence instead of a rhythmic triple:
 
@@ -331,8 +313,6 @@ would-be-witty titles.
 
 ## Punctuation and typography
 
-- Use «-» (hyphen with spaces), never the em dash «—», in every position Russian typography would
-  put a тире.
 - Reach for the dash only where grammar leaves no alternative: subject-predicate («Trino -
   распределённый SQL-движок»), verb gapping («совпавшие обновляем, отсутствующие - вставляем»),
   «это»-constructions, elliptical predicates. Everywhere else replace it without touching a word:
@@ -343,13 +323,8 @@ would-be-witty titles.
 - No «clause - punchline» endings. Keep dash constructions at roughly 9 per 1000 words; above ~12
   the dash does work a colon, comma or full stop should do. The humanizer's "17-21 em dashes per
   1000 words is normal Russian" calibration does not apply.
-- Write «ё» consistently.
-- No hyphen between an abbreviation or loanword and the noun it modifies: «OLTP базы», «батч
-  загрузка», «дата инженер», «дата инженерный».
-- «ёлочки» only for citing a section or stage title; straight quotes for everything else: "нода".
 - Product names keep official capitalisation and alphabet: ClickHouse, MinIO, Telegram (never
   «телеграмм»).
-- No emojis.
 
 ## Grammar
 
@@ -370,12 +345,12 @@ Read once for each, in this order:
 1. Every heading and every «noun verb noun»: who acts? Is the actor first?
 2. Any sentence with more than three commas, dashes and colons.
 3. Each «не ..., а ...»: does the negated half carry information?
-4. Banned vocabulary, «просто», «именно», «ровно», em dashes.
+4. Banned vocabulary from this file and `author/`, «просто», «именно», «ровно», dash count.
    Every verb ending in -ут/-ют: is it the impersonal plural, or the second one in a row?
 5. Last sentence of each paragraph: epigram? First sentence of the text: announcement?
 6. Any sentence that only makes sense against an earlier draft.
 7. Claims: would an expert object? Is any thought compressed past what the reader can unpack? Is
-   there namedropping, self-promotion or a flattering number?
+   there a flattering number? Do the claim rules in `author/general.md` hold?
 8. Headings plus first and last sentence of each section: one line of thought, every transition
    bridged?
 9. Block order: one thought per paragraph, related blocks adjacent, context before detail, the

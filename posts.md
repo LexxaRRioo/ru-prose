@@ -1,7 +1,7 @@
 # Posts
 
-Posts in the user's own Telegram channel: career, DE practice, tooling experience. The reader is a
-subscriber who follows the author, not a student. SKILL.md applies except where this file says
+Posts in the author's own Telegram channel or blog. The reader is a subscriber who follows the
+author, not a student. SKILL.md applies except where this file says
 otherwise.
 
 ## Voice
@@ -9,9 +9,6 @@ otherwise.
 - The author's first person is the main voice, opinion markers included: «Я считаю, что полезнее
   смотреть на второго», «Я думаю, что задачи сами по себе могут быть сопоставимы», «предлагаю
   выйти на рынок».
-- «вы» addresses the reader directly. «ты» stays as the generic you in a general remark: «если
-  хочешь стать сеньором, развивай эти навыки», «а ты ещё про предыдущий modern data stack не
-  успел почитать». Do not convert one into the other.
 - Remarks to the channel are content, not scene-setting: «Про обещанный пост "для одних миддл,
   для других архитектор", помню. Надеюсь, завтра вернусь)». Keep them where the author put them.
 
@@ -44,7 +41,6 @@ after the story and grows out of it.
 - The author's feelings stay in: «брррр», «я считал это возмутительно несправедливым».
 - Practitioner jargon is welcome: «селект», «count'ы», «CTE-шки», «джобы». A figurative word goes
   in straight quotes: "выбивать", "разматывать обратно".
-- «дата инженер», «дата инженерный» without a hyphen: «на одном из уже дата инженерных проектов».
 - No cross-references to the author's other posts unless the author put them there.
 
 ## Advice section
@@ -57,20 +53,15 @@ after the story and grows out of it.
 
 ## Allowed here, banned in SKILL.md
 
-- A closing «)» on a sentence for a light tone. Not «:)», not several in a row.
-- 🔸 before each section heading. No other emojis.
 - Spoken rhythm: repetition («всё время нужно что-то изучать, изучать, изучать»), a short
   punchline after a fact («Вот так просто.»).
 - A practical aside in brackets: «(так что ошибайтесь сейчас, чтобы извлечь опыт для будущего)».
 - A disclaimer about the author's subjectivity: «Определение сеньора выше тоже субъективное».
 
 Everything else in SKILL.md holds: word order, sentence length, linking, banned vocabulary,
-dashes, «ё».
+dashes.
 
-## Structure
+## Ending
 
-- First line: the post title as plain text, no markup.
-- Section: «🔸 Heading» on its own line, text directly under it, no blank line between them.
-- Bullets use «•».
-- Ending: an optional «p.s.» with «•» bullets for side notes, then an invitation to reply when it
-  fits: «интересно послушать ваши варианты)». No summary of the post.
+No summary of the post. The title, section and ending format belongs to the author: see
+`author/posts.md`.
