@@ -16,8 +16,9 @@ unsure which sentences are theirs to carry out.
   заново на ту же таблицу»
 
 The fix is the imperative itself, not «вы» plus a present-tense verb: that form still describes.
-Impersonal plural stays only where the sentence is about other people: «В реальных компаниях
-проверку вешают и на строку задачи, и на слот». Where the actor is a mechanism, name it:
+Impersonal plural stays only where the sentence is about specific other people: «В реальных
+компаниях проверку вешают и на строку задачи, и на слот». "How the industry does it" in handouts
+does not qualify: use the forms from "One sentence template" in SKILL.md. Where the actor is a mechanism, name it:
 «сегмент, в который пишут сейчас» -> «сегмент, в который идёт запись».
 
 A UI element is the object, never the actor: not «Разворачивает его кнопка слева от логотипа»

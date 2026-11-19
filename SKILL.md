@@ -236,6 +236,28 @@ Replace on sight, in any position (headings, body, captions, alt text):
 
 ## AI-slop patterns
 
+**One sentence template.** Generated Russian repeats one shape: subject + present-tense active
+verb + object, and fills a missing subject with the impersonal plural («выгружают», «задают»,
+«хранят»). Each sentence is correct; the distribution reads as non-native. The author's own text
+has about 4 verbs ending in -ут/-ют per 1000 words; generated drafts had 18. Never put a
+third-person plural verb in two neighbouring sentences. Pick the form by what the sentence is about:
+
+- a process or mechanism, actor unimportant -> -ся or a short participle:
+  - До: «журнал, в который дописывают сообщения» -> После: «дописываются сообщения»
+  - До: «Партицию выбирает хэш ключа» -> После: «Партиция выбирается по хэшу ключа»
+  - До: «Подробно Iceberg разбирает урок 1.5» -> После: «разобран в уроке 1.5»
+- an option or advice -> можно / полезно / нужно / лучше / могут + infinitive:
+  - До: «На него ставят алерт» -> После: «Полезно ставить алёрт на лаг…»
+  - До: «число партиций задают с запасом» -> После: «число партиций лучше задать с запасом»
+- what the course does -> мы: «разбирают уроки 2.6 и 3.2» -> «разберём на уроках 2.6 и 3.2»
+- a state -> находиться, быть, подходить: «Пока сообщения в retention» -> «Пока сообщения
+  находятся в пределах retention»; «Так хранят текущее состояние» -> «Такой топик подходит для
+  текущего состояния»
+- a noun instead of the verb: «данные выгружают в озеро» -> «нужна выгрузка в озеро»
+
+"Actor first" applies when the actor is named. "Active verbs over bureaucratic passive" bans
+chains of «будет описана, показаны, проведено», not -ся verbs for a process.
+
 **Epigram endings.** No punchline sentence that wraps the paragraph in a clever bow. State the
 fact and stop.
 
@@ -349,6 +371,7 @@ Read once for each, in this order:
 2. Any sentence with more than three commas, dashes and colons.
 3. Each «не ..., а ...»: does the negated half carry information?
 4. Banned vocabulary, «просто», «именно», «ровно», em dashes.
+   Every verb ending in -ут/-ют: is it the impersonal plural, or the second one in a row?
 5. Last sentence of each paragraph: epigram? First sentence of the text: announcement?
 6. Any sentence that only makes sense against an earlier draft.
 7. Claims: would an expert object? Is any thought compressed past what the reader can unpack? Is
