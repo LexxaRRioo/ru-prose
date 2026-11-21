@@ -20,6 +20,9 @@ repo.
 
 - The author's own experience over other companies' cases and numbers. No namedropping to back a
   point («Авито», «Магнит»): state the fact, or ask the author for their story.
+- A company's case stays usable without its name: «крупный российский ритейлер», «маркетплейс с
+  миллионами заказов в сутки», or the case with the company abstracted out entirely. Material that
+  comes from a named company is a source to anonymise, not a source to drop.
 - No self-promotion the author did not ask for: no plugs for their labs or products, no hints
   that steer toward the author's course.
 
