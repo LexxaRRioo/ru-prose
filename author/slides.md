@@ -2,7 +2,6 @@
 
 On top of `slides.md` and `author/general.md`.
 
-- «DE» in running text on slides becomes «дата инженер».
 - «Опыт:» in front of a story slide title: «Опыт: Отдельная реплика для аналитиков».
 - The speaker's first person and practitioner slang belong on slides too: «Затащил офферы:»,
   «Рабочие байки», «СисДиз».

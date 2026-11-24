@@ -5,7 +5,8 @@ description: |
   speaker notes, course and lab materials, landing and sales copy, posts, emails, docs. Covers
   voice, word order, sentence length, linking, banned vocabulary, AI-slop patterns and
   punctuation, with до/после examples taken from the author's own edits. Load the medium file
-  that matches the task (slides.md, course.md, posts.md) and the author's conventions in author/.
+  that matches the task (slides.md, course.md, posts.md), data-engineering.md for technical text
+  about data platforms, and the author's conventions in author/.
 ---
 
 # Russian prose rules
@@ -26,6 +27,9 @@ author's file wins over the medium file, and the medium file wins over this one.
 | Telegram and other social posts in the author's own channel | `posts.md` | `author/posts.md` |
 | Emails, landing and sales copy, docs | this file only | - |
 
+Technical text about data engineering also loads `data-engineering.md` and
+`author/data-engineering.md`, whatever the medium.
+
 This file and the medium files hold rules that work for any Russian text. `author/` holds one
 author's choices: address forms per project, typography, signature formatting, words they dislike.
 
@@ -34,9 +38,6 @@ author's choices: address forms per project, typography, signature formatting, w
 - Write Russian directly. Never draft in English for later translation: translation is the
   source of the calques these rules ban. Never use an English calque where a normal Russian
   word exists.
-- DE terms stay in the form practitioners say them, often English: «compaction» (not
-  «компакция»), «lakehouse» (not «озеро»), «трейд-оффы», «at least once», «it depends», «Data
-  lake vs Lakehouse». Spell out abbreviations: «Frontend/Backend», not «FE/BE».
 - Never let editing history leak into the text. No sentence argues against a version the reader
   never saw, justifies why something was added, or emphasises a correction. Test each sentence:
   would it read the same in a from-scratch draft? If not, rewrite it as a plain statement.
@@ -167,8 +168,6 @@ The author edits for substance as often as for style. These rules cover what a t
 - A conclusion never undercuts the text's own thesis («можно оставить всё как было»).
 - Honest numbers. Hours, prices and workload are realistic, never flattering to the offer.
 - A calculation shows where every number comes from, in plain notation: «2 млн», not «2e6».
-- Concrete DE work instead of generic verbs: «грузить, мониторить и чинить» -> «описать в коде,
-  мониторить и поддерживать».
 
 ## Order of sections
 
