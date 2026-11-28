@@ -9,6 +9,25 @@ conventions or deletes it.
 The DE system design course uses «ты» everywhere: video scripts, slides, handouts, program.
 Vacancies and channel-facing texts use «ты». Labs and older course materials use «вы».
 
+## Reader's gender
+
+Text addressed to the reader carries no grammatical gender, so a woman reading it does not trip
+over masculine forms. Never switch to feminine forms either. Third person about a role
+(интервьюер, senior) stays as it is: the rule covers the reader, not every noun.
+
+| До | После |
+|---|---|
+| «Попробуй сам», «реши сам» | «Попробуй самостоятельно», «реши, потом сверься» |
+| «Будь готов рассказать» | «Готовься рассказать», «подготовь ответ» |
+| «который ты назвал», «которые ты проговорил» | «любой ... на схеме», «проговорённые вслух» |
+| «почему ты выбрал этот блок» | «почему выбран этот блок» |
+| «Ты подробно рассказал про загрузку» | «Загрузка уже разобрана подробно» |
+| «Как бы ты построил хранилище?» | «Как будешь строить хранилище?» |
+
+Imperative, present and future forms have no gender: «назови», «решаешь», «будешь строить».
+Before handing text over, check every past-tense verb, short adjective («готов», «уверен»,
+«должен») and «сам» that refers to the reader.
+
 ## Workflow
 
 Before editing an existing file, check whether it sits in a git repo. If it does and has
